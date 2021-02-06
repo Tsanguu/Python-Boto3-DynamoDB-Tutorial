@@ -1,0 +1,74 @@
+[
+    {
+        "device_id": "10001",
+        "datacount": 1,
+        "info": {
+            "info_timestamp": "1612519200",
+            "temperature1": 22.74,
+            "temperature2": 21.45,
+            "temperature3": 25.6,
+            "temperature4": 20.56,
+            "temperature5": 24.67
+        }
+    },
+    {
+        "device_id": "10001",
+        "datacount": 2,
+        "info": {
+            "info_timestamp": "1612521000",
+            "temperature1": 24.34,
+            "temperature2": 24.59,
+            "temperature3": 25.2,
+            "temperature4": 22.95,
+            "temperature5": 24.17
+        }
+    },
+    {
+        "device_id": "10002",
+        "datacount": 1,
+        "info": {
+            "info_timestamp": "1612519200",
+            "temperature1": 24.34,
+            "temperature2": 24.59,
+            "temperature3": 25.2,
+            "temperature4": 22.95,
+            "temperature5": 24.17
+        }
+    },
+    {
+        "device_id": "10002",
+        "datacount": 2,
+        "info": {
+            "info_timestamp": "1612521000",
+            "temperature1": 24.34,
+            "temperature2": 24.59,
+            "temperature3": 25.2,
+            "temperature4": 22.95,
+            "temperature5": 24.17
+        }
+    },
+    {
+        "device_id": "10003",
+        "datacount": 1,
+        "info": {
+            "info_timestamp": "1612519200",
+            "temperature1": 24.34,
+            "temperature2": 24.59,
+            "temperature3": 25.2,
+            "temperature4": 22.95,
+            "temperature5": 24.17
+        }
+    },
+    {
+        "device_id": "10003",
+        "datacount": 2,
+        "info": {
+            "info_timestamp": "1612521000",
+            "temperature1": 24.34,
+            "temperature2": 24.59,
+            "temperature3": 25.2,
+            "temperature4": 22.95,
+            "temperature5": 24.17
+        }
+    }
+]
