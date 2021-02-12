@@ -1,11 +1,11 @@
-from pprint import pprint
-import boto3
+from pprint import pprint  # import pprint, a module that enable to “pretty-print”
+import boto3  # import Boto3
 
 
 def update_device(device_id, datacount, info_timestamp, temperature1, temperature2, temperature3, temperature4, temperature5, dynamodb=None):
     dynamodb = boto3.resource(
         'dynamodb', endpoint_url="http://localhost:8000")
-
+    # Specify the table
     devices_table = dynamodb.Table('Devices')
 
     response = devices_table.update_item(
@@ -31,4 +31,5 @@ if __name__ == '__main__':
     update_response = update_device(
         "10001", 3, "1612522800", "33.74", "23.74", "25.20", "22.00", "25.00")
     print("Device Updated")
+    # Print response
     pprint(update_response)
