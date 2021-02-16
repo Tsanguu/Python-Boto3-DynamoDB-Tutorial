@@ -11,7 +11,7 @@ def delete_device(device_id, datacount, info_timestamp, dynamodb=None):
     devices_table = dynamodb.Table('Devices')
 
     try:
-        response1 = devices_table.delete_item(
+        response = devices_table.delete_item(
             Key={
                 'device_id': device_id,
                 'datacount': datacount
@@ -23,18 +23,18 @@ def delete_device(device_id, datacount, info_timestamp, dynamodb=None):
             }
         )
     except ClientError as er:
-        if er.response1['Error']['Code'] == "ConditionalCheckFailedException":
+        if er.response['Error']['Code'] == "ConditionalCheckFailedException":
             print(er.response['Error']['Message'])
         else:
             raise
     else:
-        return response1
+        return response
 
 
 if __name__ == '__main__':
     print("DynamoBD Conditional delete")
     # Provide device_id, datacount, info_timestamp
-    delete_response = delete_device("10001", 1, 1714910791415)
+    delete_response = delete_device("10001", 3, "1712519200")
     if delete_response:
         print("Item Deleted:")
         # Print response
